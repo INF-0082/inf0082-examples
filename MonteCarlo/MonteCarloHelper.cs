@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.ConcurrencyVisualizer.Instrumentation;
+using System;
 
 namespace MonteCarlo
 {
@@ -30,6 +31,7 @@ namespace MonteCarlo
         {
             double x = rnd.NextDouble();
             double y = rnd.NextDouble();
+
             if (x * x + y * y <= 1)
             {
                 insideCircle++;
